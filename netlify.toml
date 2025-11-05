@@ -1,0 +1,9 @@
+[build]
+  command = ""
+  publish = "."
+
+# SPA-style fallback not needed for a single-page static site, but kept for safety.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
