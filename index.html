@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Can Culture Media</title>
+  <meta name="description" content="Empowering organizations to care for people and perform with purpose." />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* simple card + button styles */
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:1rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;font-weight:600;padding:.6rem 1rem;border-radius:1rem}
+    .btn-primary{background:#0369a1;color:#fff}.btn-primary:hover{background:#075985}
+    .btn-outline{border:1px solid #cbd5e1;color:#0f172a}.btn-outline:hover{background:#f1f5f9}
+    .tabs-trigger{padding:.4rem .75rem;border-radius:.5rem}
+    .tabs-trigger.active{background:#0369a1;color:#fff}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg id="logo" width="24" height="24"></svg>
+        <span class="font-semibold tracking-tight">Can Culture Media, LLC</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#solutions" class="hover:text-sky-700">Solutions</a>
+        <a href="#about" class="hover:text-sky-700">About</a>
+        <a href="#cases" class="hover:text-sky-700">Case Studies</a>
+        <a href="#resources" class="hover:text-sky-700">Resources</a>
+        <a href="#contact" class="hover:text-sky-700">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+          Empowering organizations to care for people and perform with purpose.
+        </h1>
+        <p class="mt-4 text-lg text-slate-600">
+          We help employers and nonprofits create healthier, more efficient workplaces through
+          tax-smart wellness benefits and workforce development that actually sticks.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#solutions" class="btn btn-primary">See Solutions
+            <span class="inline-block ml-2" aria-hidden="true">→</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">Get a Free Payroll Wellness Audit</a>
+        </div>
+        <ul class="mt-6 grid sm:grid-cols-3 gap-3 text-sm">
+          <li class="flex items-center gap-2"><span class="text-emerald-600">●</span> Zero net cost to employers</li>
+          <li class="flex items-center gap-2"><span class="text-emerald-600">●</span> Increase take-home pay</li>
+          <li class="flex items-center gap-2"><span class="text-emerald-600">●</span> Reduce payroll tax burden</li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="card p-5 rounded-2xl">
+          <div class="text-sky-600 font-semibold">Capstone Wellness</div>
+          <p class="text-sm text-slate-600 mt-1">ACA §125 indemnity-based wellness that boosts pay + cuts FICA.</p>
+        </div>
+        <div class="card p-5 rounded-2xl">
+          <div class="text-sky-600 font-semibold">LPaaS Automation</div>
+          <p class="text-sm text-slate-600 mt-1">Turn SOPs + product knowledge into trackable micro-learning.</p>
+        </div>
+        <div class="card p-5 rounded-2xl">
+          <div class="text-sky-600 font-semibold">Compliance-first</div>
+          <p class="text-sm text-slate-600 mt-1">Aligned with recent tri-agency guidance; evidence-based.</p>
+        </div>
+        <div class="card p-5 rounded-2xl">
+          <div class="text-sky-600 font-semibold">Plug & Play</div>
+          <p class="text-sm text-slate-600 mt-1">Fast onboarding, co-brand options, coaching + TA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Solutions</h2>
+      <p class="mt-2 text-slate-600">Two pillars, one mission: care for people, elevate performance.</p>
+
+      <div class="mt-8">
+        <div class="inline-flex gap-2 p-1 bg-white border border-slate-200 rounded-md">
+          <button class="tabs-trigger active" data-tab="wellness">Capstone Wellness Benefits</button>
+          <button class="tabs-trigger" data-tab="lpaas">Workforce Development & SOP Automation</button>
+        </div>
+
+        <!-- Wellness -->
+        <div id="tab-wellness" class="mt-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card rounded-2xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Tax-smart wellness with real outcomes</h3>
+                <ul class="mt-3 space-y-2 text-slate-700 text-sm">
+                  <li>• Saves employers ~$700–$850 per participating employee annually</li>
+                  <li>• Increases employee take-home pay by ~$80–$170/month</li>
+                  <li>• 24/7 telehealth, mental health, Rx, legal, ID protection</li>
+                  <li>• ACA §125 indemnity-based wellness; compliance-first</li>
+                </ul>
+                <div class="mt-5 flex gap-3">
+                  <a href="#contact" class="btn btn-primary">Request Employer Audit</a>
+                  <a href="#resources" class="btn btn-outline">View Program Brief</a>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded-2xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Who it’s for</h3>
+                <div class="grid sm:grid-cols-2 gap-3 mt-3 text-sm">
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Employers 25–500+ employees</div>
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">HR & People Leaders</div>
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Benefits Brokers & PEOs</div>
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Nonprofits with payroll</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LPaaS -->
+        <div id="tab-lpaas" class="mt-6 hidden">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card rounded-2xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Learning Platform as a Service (LPaaS)</h3>
+                <ul class="mt-3 space-y-2 text-slate-700 text-sm">
+                  <li>• 50+ EES-aligned micro-courses for workforce skills</li>
+                  <li>• Convert SOPs & product knowledge into on-demand, trackable learning</li>
+                  <li>• Assign certifications or completion credits automatically</li>
+                  <li>• Bill Medicaid (H2014) or integrate into HR performance systems</li>
+                </ul>
+                <div class="mt-5 flex gap-3">
+                  <a href="#contact" class="btn btn-primary">Schedule a Demo</a>
+                  <a href="#resources" class="btn btn-outline">Download LPaaS One-Pager</a>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded-2xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Who it’s for</h3>
+                <div class="grid sm:grid-cols-2 gap-3 mt-3 text-sm">
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Nonprofits & Workforce Programs</div>
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Employers & HR Teams</div>
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Schools & Training Providers</div>
+                  <div class="p-3 rounded-xl bg-white border border-slate-200">Product & Operations Managers</div>
+                </div>
+                <div class="mt-6 border-t pt-4">
+                  <h4 class="font-semibold mb-2">Use Cases</h4>
+                  <div class="grid sm:grid-cols-2 gap-2 text-sm">
+                    <div class="p-2 rounded-lg bg-slate-100 border border-slate-200">Train new hires faster and consistently</div>
+                    <div class="p-2 rounded-lg bg-slate-100 border border-slate-200">Automate SOP and compliance training</div>
+                    <div class="p-2 rounded-lg bg-slate-100 border border-slate-200">Certify staff on key product knowledge</div>
+                    <div class="p-2 rounded-lg bg-slate-100 border border-slate-200">Create internal micro-learning academies</div>
+                    <div class="p-2 rounded-lg bg-slate-100 border border-slate-200">Track completion for audits and HR records</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tabs -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">About Can Culture Media</h2>
+        <p class="mt-3 text-slate-600">
+          Founded by <strong>Richard Park</strong> in Salem, Oregon, Can Culture Media, LLC brings together licensed
+          insurance expertise, employer benefits strategy, and workforce development know-how to
+          deliver measurable results. We partner nationally with employers, nonprofits, and schools to
+          align culture, care, and performance.
+        </p>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
+          <div class="flex items-center gap-2 p-3 rounded-xl border border-slate-200 bg-white">Oregon-registered LLC</div>
+          <div class="flex items-center gap-2 p-3 rounded-xl border border-slate-200 bg-white">Compliance-first operations</div>
+          <div class="flex items-center gap-2 p-3 rounded-xl border border-slate-200 bg-white">People & performance focus</div>
+          <div class="flex items-center gap-2 p-3 rounded-xl border border-slate-200 bg-white">Scalable, tech-enabled delivery</div>
+        </div>
+      </div>
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-xl font-semibold">What makes us different</h3>
+        <ul class="mt-3 space-y-2 text-slate-700 text-sm">
+          <li>• Integrated approach: wellness + learning</li>
+          <li>• ROI-first design: tax savings & retention</li>
+          <li>• Fast start: templates, onboarding, TA</li>
+          <li>• Story-driven culture building</li>
+        </ul>
+        <div class="mt-5">
+          <a href="#contact" class="btn btn-primary">Talk to Richard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Case Studies (Coming Soon)</h2>
+      <p class="mt-2 text-slate-600">We’re compiling short before/after snapshots with employer and nonprofit partners.</p>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold">Pilot 1</h3>
+          <p class="text-sm text-slate-600 mt-1">Add metrics like payroll tax savings, take-home pay lift, retention increase, and training completions.</p>
+        </div>
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold">Pilot 2</h3>
+          <p class="text-sm text-slate-600 mt-1">Add metrics like payroll tax savings, take-home pay lift, retention increase, and training completions.</p>
+        </div>
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold">Pilot 3</h3>
+          <p class="text-sm text-slate-600 mt-1">Add metrics like payroll tax savings, take-home pay lift, retention increase, and training completions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Resources</h2>
+      <p class="mt-2 text-slate-600">Program briefs and compliance overviews for quick stakeholder review.</p>
+      <div class="grid md:grid-cols-2 gap-4 mt-6">
+        <div class="card rounded-2xl p-5">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-semibold">Capstone Wellness – One Pager</h3>
+              <p class="text-sm text-slate-600 mt-1">Benefits, savings model, and how payroll integrates.</p>
+            </div>
+            <span class="text-sky-600">📄</span>
+          </div>
+          <div class="mt-4">
+            <a class="btn btn-outline" href="/assets/capstone-one-pager.pdf" target="_blank" rel="noreferrer">Open One-Pager</a>
+          </div>
+        </div>
+        <div class="card rounded-2xl p-5">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-semibold">LPaaS (EES) – Executive Summary</h3>
+              <p class="text-sm text-slate-600 mt-1">Platform features, Medicaid alignment, sample courses.</p>
+            </div>
+            <span class="text-sky-600">📄</span>
+          </div>
+          <div class="mt-4">
+            <a class="btn btn-outline" href="/assets/lpaas-executive-summary.pdf" target="_blank" rel="noreferrer">Open Executive Summary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Get in touch</h2>
+      <p class="mt-2 text-slate-600">Book a discovery call or request a payroll wellness audit. We’ll reply within one business day.</p>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="md:col-span-2 space-y-6">
+          <div class="card rounded-2xl p-0 overflow-hidden">
+            <iframe
+              title="Calendly – Book a 30-min call"
+              src="https://calendly.com/rich-canculturemedia/30min?hide_gdpr_banner=1"
+              class="w-full" style="height: 620px; border: 0;"
+              loading="lazy" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="card rounded-2xl p-6">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" class="grid gap-4">
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="text" name="bot-field" class="hidden" aria-hidden="true" />
+              <div class="grid sm:grid-cols-2 gap-4">
+                <input class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500" name="name" placeholder="Full name" required />
+                <input class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500" name="email" type="email" placeholder="Work email" required />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <input class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500" name="organization" placeholder="Organization" />
+                <input class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500" name="employees" placeholder="# Employees" />
+              </div>
+              <textarea class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500 min-h-[120px]" name="message" placeholder="How can we help?"></textarea>
+              <div class="flex gap-3">
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <a href="https://calendly.com/rich-canculturemedia/30min" target="_blank" rel="noreferrer" class="btn btn-outline">Book via Calendly</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="card rounded-2xl p-5 text-sm">
+            <div class="font-semibold">Phone</div>
+            <div class="mt-1 text-slate-600">(503) 409-1453</div>
+          </div>
+          <div class="card rounded-2xl p-5 text-sm">
+            <div class="font-semibold">Email</div>
+            <div class="mt-1 text-slate-600">rich@canculturemedia.com</div>
+          </div>
+          <div class="card rounded-2xl p-5 text-sm">
+            <div class="font-semibold">Headquarters</div>
+            <div class="mt-1 text-slate-600">Salem, Oregon • Serving clients nationwide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-3">
+      <div>© <span id="year"></span> Can Culture Media, LLC. All rights reserved.</div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-slate-900">Privacy</a>
+        <a href="#" class="hover:text-slate-900">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- minimal tabs + icons init -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // tabs
+    const triggers = document.querySelectorAll('.tabs-trigger');
+    const well = document.getElementById('tab-wellness');
+    const lpaas = document.getElementById('tab-lpaas');
+    triggers.forEach(btn => btn.addEventListener('click', () => {
+      triggers.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const val = btn.dataset.tab;
+      if(val === 'wellness'){ well.classList.remove('hidden'); lpaas.classList.add('hidden'); }
+      else { lpaas.classList.remove('hidden'); well.classList.add('hidden'); }
+    }));
+    // lucide icon placeholder
+    if(window.lucide){ try { lucide.createIcons(); } catch(e){} }
+  </script>
+</body>
+</html>
